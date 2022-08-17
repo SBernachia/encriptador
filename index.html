@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link rel="icon" href="imagenes/encriptado.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f76534a51c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+
+        <div class="div-ingreso">
+
+            <h1><img class="logo" src="Imagenes/logo.png" alt="Logo alura"></h1>
+            <textarea class="text-ingresado" placeholder="Ingrese su texto a encriptar aquí"></textarea>
+            
+            <p class="advertencia"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos</p>
+
+            <div class="div-botones">
+                <button class="btn btn-encriptar">Encriptar</button>
+                <button class="btn btn-desenctriptar">Desencriptar</button>
+            </div>  
+
+        </div>
+
+        <div class="div-resultado">
+            <textarea class="text-resultado" readonly></textarea>
+            <button class="btn btn-copy">Copiar</button>
+            <p class="confir-copy">¡copiado!</p>
+            <div class="sin-ingreso">
+                <img class="muñeco" src="imagenes/ImgMuñeco.png" alt="">
+                <p class="nin-msj">Ningún mensaje fue encontrado</p>
+                <p class="ingresar-texto">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <a href="https://github.com/SBernachia"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sebastianjbernachia/"><i class="fa-brands fa-linkedin"></i></a>
+            <p class="text-copyright">&copy Sebastian Bernachia</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
