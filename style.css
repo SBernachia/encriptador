@@ -185,6 +185,9 @@ a {
 }
 
 @media screen and (max-width: 576px) {
+    main {
+        padding-bottom: 25%;
+    }
     .btn {
         margin: 15px auto;
         width: 80%;
