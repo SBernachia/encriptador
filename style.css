@@ -20,20 +20,20 @@ h1 {
     vertical-align: top;
 }
 .logo {
-    width: 32px;
+    width: 42px;
 }
 .text-ingresado {
     background-color: #FCBF49;
-    font-size: 20px;
+    font-size: 27px;
     margin: 5% 10%;
     width: 80%;
-    height: 300px;
+    height: 400px;
     resize: none;
     border: none;
     outline: none;
 }
 .advertencia {
-    font-size: 12px;
+    font-size: 16px;
     color: #0B0500;
     margin: 0 10%;
 }
@@ -44,12 +44,11 @@ h1 {
     text-align: center;
 }
 .btn {
-    margin: 0px 15px;
-    background-color: #0B0500;
-    color: #FFFAFF;
+    margin: 0px 20px;
+    font-size: 18px;
     width: 30%;
-    height: 50px;
-    border-radius: 20px;
+    height: 67px;
+    border-radius: 27px;
     box-shadow: 0px 0px 20px 0px #9F772D;
     cursor: pointer;
     border: none;
@@ -57,6 +56,10 @@ h1 {
 .btn:hover {
     background-color:#9F772D;
     border: 1px solid #0B0500;
+}
+.btn-encriptar{
+    background-color: #0B0500;
+    color: #FFFAFF;
 }
 .btn-desenctriptar{
     background-color: #FFFAFF;
@@ -67,13 +70,12 @@ h1 {
 /* SECCION RESULTADO */
 .div-resultado {
     text-align: center;
-    margin: 0;
     width: 25%;
-    height: 500px;
+    height: 660px;
     background-color: #FFFAFF;
     display: inline-block;
-    margin-left: 60px;
-    border-radius: 30px;
+    margin-left: 6%;
+    border-radius: 40px;
     box-shadow: 0px 0px 20px 0px #9F772D;
     position: relative;
 }
@@ -81,13 +83,14 @@ h1 {
     background-color: #FFFAFF;
     margin: 50px auto 30px;
     width: 80%;
-    height: 300px;
+    height: 435px;
     resize: none;
     border: none;
     outline: none;
-    font-size: 18px;
+    font-size: 24px;
 }
 .btn-copy{
+    background-color: #0B0500;
     width: 80%;
     margin: 20px auto 10px;
     box-shadow: 0px 0px 25px -3px #0B0500;
@@ -97,11 +100,11 @@ h1 {
     color: #0B0500;
     margin: 0;
     visibility: hidden;
-    font-size: 14px;
+    font-size: 18px;
 }
 .sin-ingreso {
     position: absolute;
-    top: 80px;
+    top: 100px;
     margin: 20px;
 }
 .muñeco {
@@ -109,12 +112,12 @@ h1 {
 }
 .nin-msj {
     margin: 0;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: bold;
 }
 .ingresar-texto {
-    margin: 10px 0;
-    font-size: 12px;
+    margin: 12px 0;
+    font-size: 16px;
 }
 
 /* SECCION FOOTER */
@@ -126,49 +129,62 @@ h1 {
     padding: 25px;
 }
 a {
-    font-size: 18px;
+    font-size: 24px;
     color:#FFFAFF;
     margin: 0 20px;
 }
 .text-copyright {
     word-spacing: 2px;
-    font-size: 12px;
+    font-size: 16px;
     margin: 15px 5px 0;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 992px) {
     body {
         text-align: center;
     }
+    main {
+        padding: 6%;
+        padding-bottom: 15%;
+    }
     .div-ingreso{
         text-align: left;
-        width: 100%;
+        width: auto;
+        display: block;
+    }
+    .div-botones {
+        width: auto;
+        margin: 2% 0;
     }
     .btn {
         width: 40%;
     }
     .div-resultado {
-        margin: 20px auto;
-        width: 90%;
+        display: block;
+        margin: 50px auto;
+        width: 80%;
         height: 250px;
     }
     .text-resultado {
         height: 150px;
     }
     .btn-copy {
-        margin-top: 50px;
+        margin-top: 70px;
     }
     .muñeco {
+        left:0;
+        top:0;
         position: absolute;
         visibility: hidden;
     }
     .sin-ingreso{
+        top: 80px;
         left: 0;
         right: 0;
     }
 }
 
-@media (max-width: 376px) {
+@media screen and (max-width: 576px) {
     .btn {
         margin: 15px auto;
         width: 80%;
